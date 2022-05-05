@@ -1,0 +1,158 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #caebf2;
+    color: #001f3f;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.container > div {
+    margin: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), 
+        rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.intro {
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.i-am .i-like {
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+    .about-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+.projects-heading {
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.project {
+    position: relative;
+    justify-self: center;
+    padding: 4%;
+}
+
+.project-image {
+    /* justify-self: center; */
+    /* padding: 4%; */
+    border-radius: 5%;
+    /* width: 250px; 
+    height: 250px; */
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+    transition: all ease-in-out 0.2s;
+}
+
+.project-heading {
+    color: white;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: all ease-in-out 0.2s;
+}
+
+.project:hover {
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+    filter: brightness(75%);
+}
+
+.project:hover .project-heading {
+    visibility: visible;
+}
+
+@media  (max-width: 650px) {
+    .projects-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.links {
+    justify-self: center;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 650px) {
+    .links-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+    transition: all ease-in-out 0.2s;
+}
+
+.profile-picture:hover {
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+form input, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+}
+
+form {
+    width: 350px;
+    margin: 0 auto;
+}
+
+form input[type="submit"] {
+    width: 250px;
+    color: #efdad7;
+    background-color: #1572a1;
+}
+
+.submit-button-wrapper {
+    margin: 20px 0;
+}
